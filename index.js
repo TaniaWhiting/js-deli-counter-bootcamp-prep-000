@@ -13,5 +13,10 @@ function nowServing(katzDeliLine){
   }
 }
 
-function currentLine(katzDeliLine){}
+function currentLine(katzDeliLine){
+  var array = [];
+  for (var i=0; i < katzDeliLine.length; i++){
+    array.push(i + 1)
+  }
+}
  
