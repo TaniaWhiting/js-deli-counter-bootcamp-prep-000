@@ -21,6 +21,6 @@ function currentLine(katzDeliLine){
   for (var i=0; i < katzDeliLine.length; i++){
     fillArray();
   }
-  return ("The line is currently empty" + array.slice(0, array.length));
+  return ("The line is currently empty." + array.slice(0, array.length));
 }
  
