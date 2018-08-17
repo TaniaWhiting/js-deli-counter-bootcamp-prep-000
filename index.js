@@ -16,7 +16,7 @@ function nowServing(katzDeliLine){
 function currentLine(katzDeliLine){
   var array = [];
   function fillArray(){
-    array.push("(i + 1) + ". " + katzDeliLine[i]");
+    array.push((i + 1) + ". " + katzDeliLine[i]);
   }
   for (var i=0; i < katzDeliLine.length; i++){
     fillArray();
