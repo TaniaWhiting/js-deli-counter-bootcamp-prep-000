@@ -18,9 +18,13 @@ function currentLine(katzDeliLine){
   function fillArray(){
     array.push(" " + (i + 1) + ". " + katzDeliLine[i]);
   }
-  for (var i=0; i < katzDeliLine.length; i++){
-    fillArray();
+  if (katzDeliLine.length > 0){
+    for (var i=0; i < katzDeliLine.length; i++){
+      fillArray();
+    }
+    return ("The line is currently:" + array.slice(0, array.length));
+  }else{
+    return ("The line is currently empty.")
   }
-  return ("The line is currently:" + array.slice(0, array.length));
 }
  
