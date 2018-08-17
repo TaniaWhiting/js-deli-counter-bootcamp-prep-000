@@ -16,11 +16,11 @@ function nowServing(katzDeliLine){
 function currentLine(katzDeliLine){
   var array = [];
   function fillArray(){
-    array.push("  " + (i + 1) + " . " + katzDeliLine[i]);
+    array.push((i + 1) + ". " + katzDeliLine[i]);
   }
   for (var i=0; i < katzDeliLine.length; i++){
     fillArray();
   }
-  return ("The line is currently empty." + array.slice(0, array.length));
+  return ("The line is currently:" + array.slice(0, array.length));
 }
  
