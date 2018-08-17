@@ -15,8 +15,12 @@ function nowServing(katzDeliLine){
 
 function currentLine(katzDeliLine){
   var array = [];
-  for (var i=0; i < katzDeliLine.length; i++){
-    array.push(i + 1)
+  function fillArray(){
+    array.push("(i + 1) + ". " + katzDeliLine[i]");
   }
+  for (var i=0; i < katzDeliLine.length; i++){
+    fillArray();
+  }
+  return ("The line is currently" + array.slice(0, array.length));
 }
  
