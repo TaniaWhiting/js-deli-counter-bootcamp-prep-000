@@ -1,3 +1,4 @@
 function takeANumber(katzDeliLine, name){
-  katzDeliLine.push()
+  katzDeliLine.push(name);
+  return ("Welcome " + name + "You are number" + katzDeliLine.length + " in line.");
 }
